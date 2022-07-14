@@ -13,9 +13,7 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
-import org.checkerframework.checker.units.qual.A;
 import org.jetbrains.annotations.NotNull;
-import sun.management.Sensor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +31,7 @@ public class VoteCommand implements CommandExecutor {
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if (args.length != 1) {
             sender.sendMessage(ChatColor.BLUE + "Plugin by Cooleg.");
+            return true;
         }
         switch (args[0]) {
             case ("reload"):
@@ -54,7 +53,7 @@ public class VoteCommand implements CommandExecutor {
                 sender.sendMessage(ChatColor.BLUE + "Plugin by Cooleg.");
                 break;
         }
-        return false;
+        return true;
     }
 
     private void updateVotes(String vote) {
