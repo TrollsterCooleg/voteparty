@@ -1,0 +1,21 @@
+CurrentVotes: 0
+NeededVotes: 50
+# If true, a bunch of UUID's will be stored in this file
+# up to the max defined by NeededVotes to later only
+# give those UUID's rewards.
+VoteForRewards: true
+# Only mark as true if all commands you set work on offline players
+# Otherwise voters who go offline may be given rewards,
+# which could potentially bug out your plugins.
+CommandsWorkOffline: true
+# Player commands run per player. If a command doesnt contain the placeholder
+# %player% it will not run. These are meant to do per player rewards.
+
+# Global commands just run general commands. If you put %player%
+# in a global command the command will do nothing.
+PlayerCommands:
+  - give %player% diamond
+GlobalCommands:
+  - give @a diamond
+# Where players who voted are stored if VoteForRewards is true.
+Players:

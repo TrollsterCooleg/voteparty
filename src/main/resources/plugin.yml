@@ -1,0 +1,10 @@
+name: SimpleVoteParty
+version: '${project.version}'
+main: me.cooleg.simplevoteparty.SimpleVoteParty
+api-version: 1.19
+depend: [Votifier, PlaceholderAPI]
+authors: [ Cooleg ]
+description: Vote party plugin with a simple configuration. Requires NuVotifier and PlaceholderAPI reccomended.
+commands:
+  voteparty:
+    permission: vote.commands
