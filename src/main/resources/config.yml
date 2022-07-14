@@ -1,5 +1,6 @@
 CurrentVotes: 0
 NeededVotes: 50
+API-Alerts: true
 # If true, a bunch of UUID's will be stored in this file
 # up to the max defined by NeededVotes to later only
 # give those UUID's rewards.
