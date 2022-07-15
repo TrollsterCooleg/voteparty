@@ -7,7 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class SimpleVoteParty extends JavaPlugin {
 
-
+    public VotePartyAPI api = new VotePartyAPI(this);
     @Override
     public void onEnable() {
         getConfig().options().copyDefaults();
